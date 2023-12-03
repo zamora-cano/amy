@@ -1,2 +1,2 @@
 # amy
-inteligencia artificial
+Asistente virtual
