@@ -1,5 +1,5 @@
 import random, json, urllib.request
-from clases.chatGPT import ChatGPTClient 
+# from chatGPT import ChatGPTClient 
 
 class ChatBot():
     def __init__(self):
@@ -63,8 +63,8 @@ class ChatBot():
                 resultado = "Lo siento, no hay conexion de internet"
             return resultado
         else:
-            client = ChatGPTClient()
+            # client = ChatGPTClient()
 
-            response_data = client.generate_response_choices(input)
-            return response_data
+            # response_data = client.generate_response_choices(input)
+            # return response_data
             return "Nada"
