@@ -1,4 +1,5 @@
 import random, json, urllib.request
+from clases.chatGPT import ChatGPTClient 
 
 class ChatBot():
     def __init__(self):
@@ -17,7 +18,6 @@ class ChatBot():
         
         if input in conversacion:
             numero = random.randint(0,2)
-            print(input)
             return conversacion[input][numero]
         
         elif "un dado" in input:
@@ -63,4 +63,8 @@ class ChatBot():
                 resultado = "Lo siento, no hay conexion de internet"
             return resultado
         else:
-            return "no entendi o no te escuché" 
+            # client = ChatGPTClient()
+
+            # response_data = client.generate_response_choices(input)
+            # return response_data
+            return "Nada"

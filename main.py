@@ -7,6 +7,8 @@ recognition = VoiceRecognitionModule()
 
 while True:
     text = recognition.recognize()
+    
+    print(text)
     if text:
         ChatBot_resultado = ChatBot.text(text)
         print(text,"\n",ChatBot_resultado)
