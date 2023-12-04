@@ -33,6 +33,7 @@ class ChatBot:
             "qué eres": [
                 "Soy una asistente virtual creada para ayudarte",
                 "Me presento como Amy, una asistente virtual diseñada para asistirte",
+                "Me presento como Amy, una asistente virtual diseñada para asistirte",
             ],
             "cómo te llamas": [
                 "Mi nombre es Amy, una asistente virtual a tu servicio",
@@ -64,15 +65,26 @@ class ChatBot:
             "what are you": [
                 "I am a virtual assistant created to help you",
                 "Allow me to introduce myself as Amy, a virtual assistant designed to assist you",
+                "Allow me to introduce myself as Amy, a virtual assistant designed to assist you",
             ],
             "what is your name": [
                 "My name is Amy, a virtual assistant at your service",
                 "I'm called Amy, your personal virtual assistant",
                 "Hello, I'm Amy. What's your name?",
             ],
+            "nigers":[
+                "are you racist?",
+                "are you racist?",
+                "are you racist?"
+            ],
+            "nigga":[
+                "are you racist?",
+                "are you racist?",
+                "are you racist?"
+            ]
         }
         
-        arduino = serial.Serial("COM12", 9600)
+        # arduino = serial.Serial("COM12", 9600)
 
         input = input.lower()
 
@@ -144,19 +156,19 @@ class ChatBot:
             return resultado
 
         # Proyecto navideño
-        elif "navidad" in input or "christmas" in input:
-            print("prendido")
-            time.sleep(2)
-            arduino.write(b'1')  # Puedes cambiar esto a '2' si es necesario
-            arduino.close()
+        # elif "navidad" in input or "christmas" in input:
+        #     print("prendido")
+        #     time.sleep(2)
+        #     arduino.write(b'1')  # Puedes cambiar esto a '2' si es necesario
+        #     arduino.close()
             
-            return "Happy christmas"
+        #     return "Happy christmas"
         
-        elif "finn" in input or "end" in input:
-            time.sleep(2)
-            arduino.write(b'0')  # Puedes cambiar esto a '2' si es necesario
-            arduino.close()
-            return "End christmas"
+        # elif "finn" in input or "end" in input:
+        #     time.sleep(2)
+        #     arduino.write(b'0')  # Puedes cambiar esto a '2' si es necesario
+        #     arduino.close()
+        #     return "End christmas"
 
         else:
             # client = ChatGPTClient()
